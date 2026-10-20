@@ -15,6 +15,7 @@ import { CreateFindingModal } from './components/CreateFindingModal';
 import { CreateAuditModal } from './components/CreateAuditModal';
 import { AuditFieldworkModal } from './components/AuditFieldworkModal';
 import { RbacMatrixModal } from './components/RbacMatrixModal';
+import { ReadmeModal } from './components/ReadmeModal';
 import { AuditControl } from './types/audit';
 import { LoginForm } from './components/LoginForm';
 
@@ -27,6 +28,7 @@ function MainContent() {
   const [showCreateAudit, setShowCreateAudit] = useState<boolean>(false);
   const [fieldworkAuditId, setFieldworkAuditId] = useState<string | null>(null);
   const [showRbacGuide, setShowRbacGuide] = useState<boolean>(false);
+  const [showReadme, setShowReadme] = useState<boolean>(false);
 
   // Fieldwork log finding helper
   const [prefilledControl, setPrefilledControl] = useState<AuditControl | null>(null);
@@ -51,6 +53,7 @@ function MainContent() {
           setShowCreateFinding(true);
         }}
         onOpenRbacGuide={() => setShowRbacGuide(true)}
+        onOpenReadme={() => setShowReadme(true)}
       />
 
       {/* Main Workspace Viewport */}
@@ -150,6 +153,13 @@ function MainContent() {
             >
               RBAC Guide
             </button>
+            <span>·</span>
+            <button
+              onClick={() => setShowReadme(true)}
+              className="text-indigo-600 hover:text-indigo-800 font-semibold"
+            >
+              README &amp; Screenshots
+            </button>
           </div>
         </div>
       </footer>
@@ -199,6 +209,13 @@ function MainContent() {
       {showRbacGuide && (
         <RbacMatrixModal
           onClose={() => setShowRbacGuide(false)}
+        />
+      )}
+
+      {showReadme && (
+        <ReadmeModal
+          onClose={() => setShowReadme(false)}
+          onNavigateTab={(tab) => setActiveTab(tab)}
         />
       )}
     </div>

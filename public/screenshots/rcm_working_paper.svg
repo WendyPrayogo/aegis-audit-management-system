@@ -1,0 +1,197 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="100%" height="100%" style="background:#0f172a; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <filter id="modalShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="20" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Darkened Backdrop -->
+  <rect x="0" y="0" width="1200" height="700" fill="#090d16" fill-opacity="0.85"/>
+  
+  <!-- Inherent Risk Working Paper Modal -->
+  <g transform="translate(60, 30)" filter="url(#modalShadow)">
+    <rect x="0" y="0" width="1080" height="640" rx="14" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+    
+    <!-- Modal Header -->
+    <path d="M0 14 Q0 0 14 0 L1066 0 Q1080 0 1080 14 L1080 64 L0 64 Z" fill="#0f172a"/>
+    <rect x="20" y="16" width="32" height="32" rx="6" fill="#1e293b"/>
+    <path d="M30 24 H42 M30 30 H42 M30 36 H38" stroke="#818cf8" stroke-width="2" stroke-linecap="round"/>
+    <text x="64" y="32" fill="#ffffff" font-size="15" font-weight="700">Inherent Risk Working Paper (WP-ENG-RCM-2026)</text>
+    <text x="64" y="47" fill="#94a3b8" font-size="11">Engineering &amp; Cloud Architecture (ENG-01) · Head: Alex Rivera · 48 Staff</text>
+    
+    <!-- Department Calculated Inherent Risk Badge in Header -->
+    <rect x="740" y="18" width="170" height="28" rx="14" fill="#fee2e2" stroke="#fca5a5" stroke-width="1"/>
+    <circle cx="756" cy="32" r="4" fill="#ef4444"/>
+    <text x="768" y="36" fill="#991b1b" font-size="11" font-weight="800">HIGH INHERENT TIER</text>
+    <text x="888" y="36" fill="#b91c1c" font-size="10" font-weight="600">17.6 / 25</text>
+    
+    <!-- Close icon -->
+    <circle cx="1046" cy="32" r="14" fill="#1e293b"/>
+    <text x="1046" y="36" fill="#94a3b8" font-size="14" font-weight="bold" text-anchor="middle">&times;</text>
+
+    <!-- Top Summary Ribbon: Hybrid Formula & Risk Breakdown -->
+    <g transform="translate(20, 80)">
+      <rect x="0" y="0" width="1040" height="96" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+      
+      <!-- Formula Explanation Widget -->
+      <g transform="translate(16, 14)">
+        <rect x="0" y="0" width="370" height="68" rx="6" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1"/>
+        <text x="12" y="20" fill="#1e40af" font-size="10" font-weight="700" text-transform="uppercase">Automated Inherent Risk Formula</text>
+        <text x="12" y="40" fill="#1e293b" font-size="13" font-weight="800" font-family="monospace">Tier Score = (0.6 &times; Avg) + (0.4 &times; Max)</text>
+        <text x="12" y="58" fill="#3b82f6" font-size="10">Avg (16.0) &times; 0.6 + Max (20.0) &times; 0.4 = <tspan font-weight="bold">17.6 &#x2192; High Tier</tspan></text>
+      </g>
+
+      <!-- Matrix Distribution Stats -->
+      <g transform="translate(406, 14)">
+        <text x="0" y="14" fill="#64748b" font-size="10" font-weight="700">RCM CONTROLS COVERAGE</text>
+        <text x="0" y="38" fill="#0f172a" font-size="20" font-weight="800">5 Matrices</text>
+        <text x="0" y="56" fill="#059669" font-size="10" font-weight="600">100% controls identified</text>
+      </g>
+      
+      <line x1="560" y1="14" x2="560" y2="82" stroke="#e2e8f0" stroke-width="1"/>
+
+      <!-- Severity Distribution -->
+      <g transform="translate(580, 14)">
+        <text x="0" y="14" fill="#64748b" font-size="10" font-weight="700">SEVERITY SPREAD</text>
+        <g transform="translate(0, 26)">
+          <rect x="0" y="0" width="60" height="36" rx="4" fill="#fee2e2"/>
+          <text x="30" y="18" fill="#991b1b" font-size="14" font-weight="800" text-anchor="middle">2</text>
+          <text x="30" y="30" fill="#b91c1c" font-size="8" font-weight="bold" text-anchor="middle">CRITICAL</text>
+
+          <rect x="70" y="0" width="60" height="36" rx="4" fill="#ffedd5"/>
+          <text x="100" y="18" fill="#c2410c" font-size="14" font-weight="800" text-anchor="middle">2</text>
+          <text x="100" y="30" fill="#9a3412" font-size="8" font-weight="bold" text-anchor="middle">HIGH</text>
+
+          <rect x="140" y="0" width="60" height="36" rx="4" fill="#fef3c7"/>
+          <text x="170" y="18" fill="#b45309" font-size="14" font-weight="800" text-anchor="middle">1</text>
+          <text x="170" y="30" fill="#78350f" font-size="8" font-weight="bold" text-anchor="middle">MEDIUM</text>
+
+          <rect x="210" y="0" width="60" height="36" rx="4" fill="#d1fae5"/>
+          <text x="240" y="18" fill="#047857" font-size="14" font-weight="800" text-anchor="middle">0</text>
+          <text x="240" y="30" fill="#065f46" font-size="8" font-weight="bold" text-anchor="middle">LOW</text>
+        </g>
+      </g>
+
+      <!-- Action buttons -->
+      <g transform="translate(860, 20)">
+        <rect x="0" y="0" width="160" height="28" rx="6" fill="#0f172a"/>
+        <text x="80" y="18" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">+ Input RCM Row</text>
+        
+        <rect x="0" y="34" width="76" height="24" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+        <text x="38" y="50" fill="#475569" font-size="9" font-weight="600" text-anchor="middle">&#x2913; CSV</text>
+        
+        <rect x="84" y="34" width="76" height="24" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+        <text x="122" y="50" fill="#475569" font-size="9" font-weight="600" text-anchor="middle">&#x2399; Print WP</text>
+      </g>
+    </g>
+
+    <!-- RCM Spreadsheet Table -->
+    <g transform="translate(20, 190)">
+      <!-- Table Header -->
+      <rect x="0" y="0" width="1040" height="32" rx="4" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+      <text x="16" y="20" fill="#334155" font-size="10" font-weight="700">CODE</text>
+      <text x="90" y="20" fill="#334155" font-size="10" font-weight="700">PROCESS &amp; SUB-PROCESS</text>
+      <text x="260" y="20" fill="#334155" font-size="10" font-weight="700">RISK DESCRIPTION &amp; THREAT</text>
+      <text x="490" y="20" fill="#334155" font-size="10" font-weight="700">L &times; I</text>
+      <text x="540" y="20" fill="#334155" font-size="10" font-weight="700">INHERENT RISK</text>
+      <text x="640" y="20" fill="#334155" font-size="10" font-weight="700">KEY CONTROL NAME</text>
+      <text x="840" y="20" fill="#334155" font-size="10" font-weight="700">TYPE / METHOD</text>
+      <text x="950" y="20" fill="#334155" font-size="10" font-weight="700">ACTIONS</text>
+
+      <!-- Row 1 -->
+      <g transform="translate(0, 38)">
+        <rect x="0" y="0" width="1040" height="74" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+        <rect x="12" y="10" width="64" height="18" rx="3" fill="#f1f5f9"/>
+        <text x="16" y="23" fill="#0f172a" font-size="9" font-weight="bold" font-family="monospace">RCM-ENG-01</text>
+        <text x="90" y="22" fill="#0f172a" font-size="11" font-weight="700">Cloud Infrastructure</text>
+        <text x="90" y="38" fill="#64748b" font-size="10">IAM &amp; Root Access</text>
+        <text x="260" y="22" fill="#1e293b" font-size="10" font-weight="600">Compromise of Root / IAM Admin Tokens</text>
+        <text x="260" y="38" fill="#64748b" font-size="9">Threat: Unauthorized cluster deletion &amp; ransomware</text>
+        <!-- L x I -->
+        <rect x="488" y="16" width="38" height="22" rx="4" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+        <text x="507" y="31" fill="#0f172a" font-size="10" font-weight="bold" text-anchor="middle">4 &times; 5</text>
+        <!-- Inherent Tier -->
+        <rect x="536" y="16" width="90" height="22" rx="4" fill="#fee2e2"/>
+        <text x="581" y="31" fill="#991b1b" font-size="9" font-weight="800" text-anchor="middle">20 (CRITICAL)</text>
+        <!-- Control -->
+        <text x="640" y="22" fill="#0f172a" font-size="10" font-weight="700">Hardware FIDO2 MFA &amp; IAM Session Lock</text>
+        <text x="640" y="38" fill="#059669" font-size="9" font-weight="600">&#x25cf; Effective &middot; Owner: Lead Security Architect</text>
+        <!-- Type & Method -->
+        <rect x="840" y="12" width="60" height="16" rx="3" fill="#ede9fe"/>
+        <text x="870" y="24" fill="#6d28d9" font-size="8" font-weight="bold" text-anchor="middle">Preventive</text>
+        <rect x="840" y="32" width="60" height="16" rx="3" fill="#e0f2fe"/>
+        <text x="870" y="44" fill="#0369a1" font-size="8" font-weight="bold" text-anchor="middle">Automated</text>
+        <!-- Actions -->
+        <text x="955" y="32" fill="#4f46e5" font-size="10" font-weight="bold">Edit</text>
+        <text x="985" y="32" fill="#64748b" font-size="10">Clone</text>
+        <text x="1018" y="32" fill="#ef4444" font-size="10">&times;</text>
+      </g>
+
+      <!-- Row 2 -->
+      <g transform="translate(0, 118)">
+        <rect x="0" y="0" width="1040" height="74" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+        <rect x="12" y="10" width="64" height="18" rx="3" fill="#f1f5f9"/>
+        <text x="16" y="23" fill="#0f172a" font-size="9" font-weight="bold" font-family="monospace">RCM-ENG-02</text>
+        <text x="90" y="22" fill="#0f172a" font-size="11" font-weight="700">CI/CD &amp; Release Pipeline</text>
+        <text x="90" y="38" fill="#64748b" font-size="10">Supply Chain &amp; Dependencies</text>
+        <text x="260" y="22" fill="#1e293b" font-size="10" font-weight="600">Malicious Dependency Injection in Microservices</text>
+        <text x="260" y="38" fill="#64748b" font-size="9">Threat: Supply chain attack injecting remote backdoor</text>
+        <!-- L x I -->
+        <rect x="488" y="16" width="38" height="22" rx="4" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+        <text x="507" y="31" fill="#0f172a" font-size="10" font-weight="bold" text-anchor="middle">4 &times; 4</text>
+        <!-- Inherent Tier -->
+        <rect x="536" y="16" width="90" height="22" rx="4" fill="#fee2e2"/>
+        <text x="581" y="31" fill="#991b1b" font-size="9" font-weight="800" text-anchor="middle">16 (HIGH)</text>
+        <!-- Control -->
+        <text x="640" y="22" fill="#0f172a" font-size="10" font-weight="700">Automated SBOM &amp; SCA Gate in GitLab Pipeline</text>
+        <text x="640" y="38" fill="#059669" font-size="9" font-weight="600">&#x25cf; Effective &middot; Owner: DevOps Release Lead</text>
+        <!-- Type & Method -->
+        <rect x="840" y="12" width="60" height="16" rx="3" fill="#ede9fe"/>
+        <text x="870" y="24" fill="#6d28d9" font-size="8" font-weight="bold" text-anchor="middle">Detective</text>
+        <rect x="840" y="32" width="60" height="16" rx="3" fill="#e0f2fe"/>
+        <text x="870" y="44" fill="#0369a1" font-size="8" font-weight="bold" text-anchor="middle">Automated</text>
+        <!-- Actions -->
+        <text x="955" y="32" fill="#4f46e5" font-size="10" font-weight="bold">Edit</text>
+        <text x="985" y="32" fill="#64748b" font-size="10">Clone</text>
+        <text x="1018" y="32" fill="#ef4444" font-size="10">&times;</text>
+      </g>
+
+      <!-- Row 3 -->
+      <g transform="translate(0, 198)">
+        <rect x="0" y="0" width="1040" height="74" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+        <rect x="12" y="10" width="64" height="18" rx="3" fill="#f1f5f9"/>
+        <text x="16" y="23" fill="#0f172a" font-size="9" font-weight="bold" font-family="monospace">RCM-ENG-03</text>
+        <text x="90" y="22" fill="#0f172a" font-size="11" font-weight="700">Disaster Recovery &amp; Backup</text>
+        <text x="90" y="38" fill="#64748b" font-size="10">Primary DB Snapshot Integrity</text>
+        <text x="260" y="22" fill="#1e293b" font-size="10" font-weight="600">Database Corrupt Backups Preventing Recovery</text>
+        <text x="260" y="38" fill="#64748b" font-size="9">Threat: Recovery failure exceeding 4-hour RTO</text>
+        <!-- L x I -->
+        <rect x="488" y="16" width="38" height="22" rx="4" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+        <text x="507" y="31" fill="#0f172a" font-size="10" font-weight="bold" text-anchor="middle">3 &times; 5</text>
+        <!-- Inherent Tier -->
+        <rect x="536" y="16" width="90" height="22" rx="4" fill="#fee2e2"/>
+        <text x="581" y="31" fill="#991b1b" font-size="9" font-weight="800" text-anchor="middle">15 (HIGH)</text>
+        <!-- Control -->
+        <text x="640" y="22" fill="#0f172a" font-size="10" font-weight="700">Weekly Automated Restore Drill &amp; Checksum Audit</text>
+        <text x="640" y="38" fill="#d97706" font-size="9" font-weight="600">&#x25cf; Partially Effective &middot; Owner: Lead DBA</text>
+        <!-- Type & Method -->
+        <rect x="840" y="12" width="60" height="16" rx="3" fill="#ede9fe"/>
+        <text x="870" y="24" fill="#6d28d9" font-size="8" font-weight="bold" text-anchor="middle">Corrective</text>
+        <rect x="840" y="32" width="60" height="16" rx="3" fill="#fef3c7"/>
+        <text x="870" y="44" fill="#b45309" font-size="8" font-weight="bold" text-anchor="middle">IT-Dependent</text>
+        <!-- Actions -->
+        <text x="955" y="32" fill="#4f46e5" font-size="10" font-weight="bold">Edit</text>
+        <text x="985" y="32" fill="#64748b" font-size="10">Clone</text>
+        <text x="1018" y="32" fill="#ef4444" font-size="10">&times;</text>
+      </g>
+    </g>
+
+    <!-- Modal Footer -->
+    <g transform="translate(20, 580)">
+      <line x1="0" y1="0" x2="1040" y2="0" stroke="#e2e8f0" stroke-width="1"/>
+      <text x="0" y="28" fill="#64748b" font-size="11">Showing 3 of 5 Risk Control Matrices &middot; Department Risk Tier recalculated in SQLite</text>
+      <rect x="890" y="10" width="150" height="32" rx="6" fill="#0f172a"/>
+      <text x="965" y="30" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">Close Working Paper</text>
+    </g>
+  </g>
+</svg>

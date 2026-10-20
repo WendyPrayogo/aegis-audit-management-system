@@ -9,7 +9,8 @@ import {
   CheckCircle2, 
   AlertTriangle,
   RotateCcw,
-  LogOut
+  LogOut,
+  BookOpen
 } from 'lucide-react';
 import { UserProfile } from '../types/audit';
 
@@ -18,13 +19,15 @@ interface HeaderProps {
   setActiveTab: (tab: string) => void;
   onOpenCreateFinding: () => void;
   onOpenRbacGuide: () => void;
+  onOpenReadme?: () => void;
 }
 
 export const Header: React.FC<HeaderProps> = ({
   activeTab,
   setActiveTab,
   onOpenCreateFinding,
-  onOpenRbacGuide
+  onOpenRbacGuide,
+  onOpenReadme
 }) => {
   const { 
     currentUser, 
@@ -95,7 +98,19 @@ export const Header: React.FC<HeaderProps> = ({
         </nav>
 
         {/* Zone 3: Actions & RBAC Persona Switcher */}
-        <div className="flex items-center gap-3 shrink-0">
+        <div className="flex items-center gap-2 sm:gap-3 shrink-0">
+          {/* Docs & Screenshots Guide Button */}
+          {onOpenReadme && (
+            <button
+              onClick={onOpenReadme}
+              className="flex items-center gap-1.5 px-2.5 py-1.5 text-xs font-semibold text-slate-700 hover:text-indigo-600 bg-slate-100 hover:bg-indigo-50 border border-slate-200 hover:border-indigo-200 rounded-lg transition-colors shadow-2xs"
+              title="View README Documentation & Screenshots"
+            >
+              <BookOpen className="w-4 h-4 text-indigo-600 shrink-0" />
+              <span className="hidden sm:inline">Docs &amp; Screenshots</span>
+            </button>
+          )}
+
           {/* In-app Notification Bell */}
           <div className="relative">
             <button
