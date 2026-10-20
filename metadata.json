@@ -1,0 +1,6 @@
+{
+  "name": "AegisAudit - Compliance & Remediation Management",
+  "description": "End-to-end audit management system for tracking compliance issues, control testing, CAPA remediation verification, automated reporting, and role-based stakeholder notifications.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
